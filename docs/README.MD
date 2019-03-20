@@ -1,13 +1,12 @@
 ## Transformers.cards API ##
 
+### Overview ###
 Transformers.cards card data is stored in an Airtable database, which can be queried using a built-in API. Using this API, you can integrate Transformers.cards data with any external system or application. The API closely follows REST semantics, uses JSON to encode objects, and relies on started HTTP codes to signal operation outcomes.
 
 ### Warning: Experimental ###
-
 The Transformers.cards API is currently in an experimental 'alpha' phase and is not yet generally available. If you are a developer interested in leveraging the card data for a third-party application (and are comfortable dealing with some jank), send me a message!
 
 ### Clients ###
-
 Your application will need an Airtable API client.
 
 * JavaScript: [airtable.js](https://github.com/Airtable/airtable.js) (Official)
@@ -21,7 +20,16 @@ The API is currently limited to 5 requests per second, per API key. If you excee
 If you anticipate a higher read volume, we recommend using a caching proxy.
 
 ### Authentication ###
-
 The API uses simple token-based authentication. Currently, there is no way for you to independently generate an API key. Contact me on Twitter or Discord and I will generate one for you.
 
+`Example using Bearer Token
+$ curl https://api.airtable.com/v0/appVjmNG3AukyOaQn/Bot%20Cards \
+-H "Authorization: Bearer YOUR_API_KEY"`
+
 You can authenticate to the API key in the HTTP authorization bearer token header. Alternatively, a slightly lower-security approach is to provide your API key with the `api_key` query parameter.
+
+`$ curl https://api.airtable.com/v0/appVjmNG3AukyOaQn/Bot%20Cards?api_key=YOUR_API_KEY`
+
+## Available Data ##
+
+Currently the eeeeeeeeeeeeeeeeeee
