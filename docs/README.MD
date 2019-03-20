@@ -41,8 +41,21 @@ Currently the data contained in the `Bot Cards` and the `Battle Cards` tables of
 ### Errors ###
 The Transformers.cards API follows HTTP status code semantics. 2xx codes signify success. 3xx mostly represent user errror. 5xx generally correspond to a server error. The error message will return a JSON-encoded body that contains `error` and `message` fields. Those will provide specific error conditions and a human-readable message to identify what caused the error.
 
-#### Success Code ###
+#### Success Code ####
 `200` OK : Request completed successfully.
 
-#### User Error Codes ###
+#### User Error Codes ####
 `400` Bad Request : The request encoding is invalid; the request can't be parsed as valid JSON.
+`401` Unauthorized : Accessing a protected resource without authorization or with invalid credentials.
+`402` Payment Required : I didn't pay the bills. My bad.
+`403` Forbidden : Accessing a protected resource with API credentials that don't have access to that resource.
+`404` Not Found : Route or resource is not found. This error is returned when the request hits an undefined route, or if the resource doesn't exist (or has been deleted).
+`413` Request Entity Too Large : The request exceeded the maximum allowed payload size. If you encounter this, let me know.
+`422` Invalid Request : The request data is invalid. This includes most of the base-specific validations. You will recieve a detailed error message and code pointing to the exact issue.
+
+#### Server Error Codes ####
+`500` Internal Server Error : Something bad happened, but it probably wasn't your fault.
+`502` Bad Gateway : The database servers are restarting or an unexpected outage is in progress. This error is generally transitory, and requests are safe to retry.
+`503` Service Unavailable : For some reason, the server could not process your request in time. You should retry the request with backoffs.
+
+
