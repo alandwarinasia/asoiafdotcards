@@ -11,7 +11,7 @@ The Transformers.cards API is currently in an experimental 'alpha' phase and is 
 Your application will need an Airtable API client.
 
 * JavaScript: [airtable.js](https://github.com/Airtable/airtable.js) (Official)
-* Ruby: [airtable](https://github.com/Airtable/airtable-ruby
+* Ruby: [airtable](https://github.com/Airtable/airtable-ruby)
 * Ruby: [airrecord](https://github.com/sirupsen/airrecord)
 * .NET: [airtable.net](https://github.com/ngocnicholas/airtable.net)
 
