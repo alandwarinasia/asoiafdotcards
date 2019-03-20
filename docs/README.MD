@@ -35,6 +35,14 @@ EXAMPLE USING QUERY PARAMETER:
 $ curl https://api.airtable.com/v0/appVjmNG3AukyOaQn/Bot%20Cards?api_key=YOUR_API_KEY
 ```
 
-## Available Data ##
-
+### Available Data ###
 Currently the data contained in the `Bot Cards` and the `Battle Cards` tables of the Transformers.cards database are available in the API.
+
+### Errors ###
+The Transformers.cards API follows HTTP status code semantics. 2xx codes signify success. 3xx mostly represent user errror. 5xx generally correspond to a server error. The error message will return a JSON-encoded body that contains `error` and `message` fields. Those will provide specific error conditions and a human-readable message to identify what caused the error.
+
+#### Success Code ###
+`200` OK : Request completed successfully.
+
+#### User Error Codes ###
+`400` Bad Request : The request encoding is invalid; the request can't be parsed as valid JSON.
