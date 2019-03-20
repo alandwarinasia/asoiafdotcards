@@ -49,7 +49,7 @@ The Transformers.cards API follows HTTP status code semantics. 2xx codes signify
 
 `401` Unauthorized : Accessing a protected resource without authorization or with invalid credentials.
 
-`402` Payment Required : I didn't pay the bills. My bad.
+`402` Payment Required : I forgot to pay the hosting bills. My bad.
 
 `403` Forbidden : Accessing a protected resource with API credentials that don't have access to that resource.
 
