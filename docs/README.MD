@@ -10,7 +10,18 @@ The Transformers.cards API is currently in an experimental 'alpha' phase and is 
 
 Your application will need an Airtable API client.
 
-- JavaScript: [airtable.js](https://github.com/Airtable/airtable.js) (Official)
-- Ruby: airtable
-- Ruby: airrecord
-- .NET: airtable.net
+* JavaScript: [airtable.js](https://github.com/Airtable/airtable.js) (Official)
+* Ruby: [airtable](https://github.com/Airtable/airtable-ruby
+* Ruby: [airrecord](https://github.com/sirupsen/airrecord)
+* .NET: [airtable.net](https://github.com/ngocnicholas/airtable.net)
+
+### Rate Limits ###
+The API is currently limited to 5 requests per second, per API key. If you exceed this rate, you will recieve a 429 status code and will need to wait 30 seconds before subsequent requests will succeed. The official Node.js client has built-in retry logic.
+
+If you anticipate a higher read volume, we recommend using a caching proxy.
+
+### Authentication ###
+
+The API uses simple token-based authentication. Currently, there is no way for you to independently generate an API key. Contact me on Twitter or Discord and I will generate one for you.
+
+You can authenticate to the API key in the HTTP authorization bearer token header. Alternatively, a slightly lower-security approach is to provide your API key with the `api_key` query parameter.
