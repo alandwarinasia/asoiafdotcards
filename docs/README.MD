@@ -22,9 +22,11 @@ If you anticipate a higher read volume, we recommend using a caching proxy.
 ### Authentication ###
 The API uses simple token-based authentication. Currently, there is no way for you to independently generate an API key. Contact me on Twitter or Discord and I will generate one for you.
 
-`Example using Bearer Token
+```
+Example using Bearer Token
 $ curl https://api.airtable.com/v0/appVjmNG3AukyOaQn/Bot%20Cards \
--H "Authorization: Bearer YOUR_API_KEY"`
+-H "Authorization: Bearer YOUR_API_KEY"
+```
 
 You can authenticate to the API key in the HTTP authorization bearer token header. Alternatively, a slightly lower-security approach is to provide your API key with the `api_key` query parameter.
 
