@@ -19,6 +19,18 @@
     
   <script type="module" async src="https://s3.us-east-2.amazonaws.com/drumrollwidget/esm-bundled/src/drumroll-app.js"></script> <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     
+    <script>
+ if ('serviceWorker' in navigator) {
+    console.log("Will the service worker register?");
+    navigator.serviceWorker.register('/js/service-worker.js')
+      .then(function(reg){
+        console.log("Yes, it did.");
+     }).catch(function(err) {
+        console.log("No it didn't. This happened:", err)
+    });
+ }
+</script>
+    
   </head>
   <body>
 
