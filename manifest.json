@@ -24,6 +24,11 @@
       "src": "/img/tdc-applogo-4x.png",
       "type": "image/png",
       "sizes": "192x192"
+    },
+    {
+      "src": "/img/tdc-applogo-8x.png",
+      "type": "image/png",
+      "sizes": "512x512"
     }
   ],
   "start_url": "/?utm_source=launcher"
