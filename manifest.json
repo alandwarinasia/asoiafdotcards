@@ -2,7 +2,7 @@
   "short_name": "TDC",
   "name": "Transformers.cards",
   "theme_color": "#f44842",
-  "background_color": "#FFFFFF",
+  "background_color": "#f44842",
   "display": "standalone",
   "icons": [
     {
