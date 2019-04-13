@@ -1,7 +1,4 @@
-## Transformers.cards ##
+## asoiaf.cards ##
 
-Transformers.cards is a website for displaying card information from Hasbro's Transformers TCG.
+[asoiaf.cards](https://asoiaf.cards) is a website for displaying card information from CMON's A Song Of Ice And Fire: The Miniatures Game.
 
-### API
-
-Transformers.cards card data is available via an API. Documentation can be found here: https://transformers.cards/api
