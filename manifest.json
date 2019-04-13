@@ -3,7 +3,7 @@
   "name": "Transformers.cards",
   "theme_color": "#f44842",
   "background_color": "#f44842",
-  "scope": "../",
+  "scope": "/",
   "display": "standalone",
   "icons": [
     {
