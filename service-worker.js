@@ -1,36 +1,11 @@
-{
-  "short_name": "TDC",
-  "name": "Transformers.cards",
-  "theme_color": "#f44842",
-  "background_color": "#f44842",
-  "scope": "/",
-  "display": "standalone",
-  "icons": [
-    {
-      "src": "/img/tdc-applogo-1x.png",
-      "type": "image/png",
-      "sizes": "48x48"
-    },
-    {
-      "src": "/img/tdc-applogo-2x.png",
-      "type": "image/png",
-      "sizes": "96x96"
-    },
-    {
-      "src": "/img/tdc-applogo-3x.png",
-      "type": "image/png",
-      "sizes": "144x144"
-    },
-    {
-      "src": "/img/tdc-applogo-4x.png",
-      "type": "image/png",
-      "sizes": "192x192"
-    },
-    {
-      "src": "/img/tdc-applogo-8x.png",
-      "type": "image/png",
-      "sizes": "512x512"
-    }
-  ],
-  "start_url": "/?ref=pwa"
-}
+<script>
+ if ('serviceWorker' in navigator) {
+    console.log("Will the service worker register?");
+    navigator.serviceWorker.register('service-worker.js')
+      .then(function(reg){
+        console.log("Yes, it did.");
+     }).catch(function(err) {
+        console.log("No it didn't. This happened:", err)
+    });
+ }
+</script>
